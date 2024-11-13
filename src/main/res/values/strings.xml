@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Pemob2</string>
+    <string name="button_semua">Semua</string>
+    <string name="button_nusantara">Nusantara</string>
+    <string name="button_sarapan">Sarapan</string>
+    <string name="button_kue">Kue</string>
+    <string name="button_pudding">Pudding</string>
+    <string name="button_menu_diet">Kue Basah</string>
+
+</resources>

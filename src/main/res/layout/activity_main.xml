@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A39BAA"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/logo_image"
+        android:layout_width="352dp"
+        android:layout_height="276dp"
+        android:src="@drawable/logo_aplikasi"
+        app:layout_constraintBottom_toTopOf="@id/main_heading"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/main_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="368dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Discover Your Next Favorite Dish"
+        android:textAlignment="center"
+        android:textColor="#694162"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/subtitle_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="476dp"
+        android:fontFamily="@font/poppins"
+        android:lineSpacingExtra="2dp"
+        android:text="Explore recipes from around the world, from\n gourmet to diet-friendly meals."
+        android:textAlignment="center"
+        android:textColor="#101010"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/masuk_button"
+        android:layout_width="173dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="#694162"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Masuk"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.075"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/subtitle_text" />
+
+    <Button
+        android:id="@+id/register_button"
+        android:layout_width="173dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="48dp"
+        android:backgroundTint="#FFFFFF"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Daftar"
+        android:textColor="#6E3F6D"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.905"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/subtitle_text" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="226dp"
+        android:layout_height="194dp"
+        android:layout_marginBottom="620dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/rec" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="668dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/rec2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

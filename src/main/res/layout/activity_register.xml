@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/register_button"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A39BAA">
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="676dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/rec2" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="226dp"
+        android:layout_height="194dp"
+        android:layout_marginBottom="608dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/rec" />
+
+    <TextView
+        android:id="@+id/tv_title_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Buat Akun"
+        android:textColor="#694162"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_subtitle_register"
+        android:layout_width="360dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Create an account so you can explore all the existing jobs"
+        android:textAlignment="center"
+        android:textColor="#101010"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_title_register" />
+
+    <EditText
+        android:id="@+id/et_email_register"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#6E3F6D"
+        android:fontFamily="@font/poppins_medium"
+        android:hint="Email"
+        android:padding="12dp"
+        android:textColor="#000000"
+        android:textColorHint="#6E3F6D"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_subtitle_register"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <EditText
+        android:id="@+id/et_password_register"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#6E3F6D"
+        android:fontFamily="@font/poppins_medium"
+        android:hint="Kata Sandi"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:textColor="#000000"
+        android:textColorHint="#6E3F6D"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_email_register"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <EditText
+        android:id="@+id/et_confirm_password_register"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#6E3F6D"
+        android:fontFamily="@font/poppins_medium"
+        android:hint="Konfirmasi Kata Sandi"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:textColor="#000000"
+        android:textColorHint="#6E3F6D"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_password_register"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <Button
+        android:id="@+id/btn_register_submit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:backgroundTint="#6E3F6D"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Daftar"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_confirm_password_register"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <Button
+        android:id="@+id/btn_already_have_account"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#FFFFFF"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Sudah memiliki akun"
+        android:textColor="#6E3F6D"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_register_submit"
+        app:layout_constraintWidth_percent="0.8" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
