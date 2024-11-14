@@ -37,8 +37,8 @@ Aplikasi WistCook adalah platform digital yang menyediakan berbagai resep makana
 - Hafizha Ramadayanti (Frontend - UI/UX)
 - Ramayani (Frontend - UI/UX)
 - Mega Siti Nurhalizah (Frontend - UI/UX)
-- Aini Maharani (Backend)
-- Jessica Almalia Putri (Backend)
+- Aini Maharani (Backend dan Logika)
+- Jessica Almalia Putri (Backend dan Logika)
  
   # Struktur Aplikasi WistCook 🥘
 - Layar Utama
