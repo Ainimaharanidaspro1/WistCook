@@ -30,6 +30,9 @@ Aplikasi WistCook adalah platform digital yang menyediakan berbagai resep makana
 - Fitur Menghapus (Admin): Admin dapat menghapus postingan dari semua pengguna. ⚠️
 - Keluar (Logout): Pengguna dapat logout dari akun mereka dan sesi akan dihapus. 🚪
 
+  # Fungsi Aplikasi 👨‍🍳📋
+  Fungsi utama dari aplikasi WistCook adalah untuk memungkinkan pengguna mencari, membagikan, dan mengelola resep makanan secara mudah. Pengguna dapat mencari resep berdasarkan kategori, bahan, atau nama hidangan melalui fitur pencarian yang komprehensif. Aplikasi ini juga memungkinkan pengguna untuk memposting resep mereka sendiri, berbagi ke media sosial, serta memberikan rating dan komentar pada resep lain. Selain itu, pengguna dapat menyimpan resep favorit, menerima notifikasi tentang resep baru, dan melihat rekomendasi resep berdasarkan preferensi mereka. Dengan demikian, aplikasi WistCook memfasilitasi interaksi antar pengguna dan memperkaya pengalaman kuliner secara digital.
+
   # Pembagian Tugas Tim 👩‍🍳
 - Hafizha Ramadayanti (Frontend - UI/UX)
 - Ramayani (Frontend - UI/UX)
