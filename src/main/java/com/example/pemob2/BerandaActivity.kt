@@ -53,31 +53,45 @@ class BerandaActivity : AppCompatActivity() {
         buttonSemua.setOnClickListener {
             Toast.makeText(this, "Menampilkan Semua Resep", Toast.LENGTH_SHORT).show()
             // Tambahkan logika yang sesuai untuk menampilkan resep kategori "Semua"
+            val intent = Intent(this, KatSemuaActivity::class.java)
+            startActivity(intent)
         }
 
         buttonNusantara.setOnClickListener {
             Toast.makeText(this, "Menampilkan Resep Nusantara", Toast.LENGTH_SHORT).show()
             // Tambahkan logika yang sesuai untuk menampilkan resep kategori "Nusantara"
+            val intent = Intent(this, KatNusantaraActivity::class.java)
+            startActivity(intent)
         }
 
         buttonSarapan.setOnClickListener {
             Toast.makeText(this, "Menampilkan Resep Sarapan", Toast.LENGTH_SHORT).show()
             // Tambahkan logika yang sesuai untuk menampilkan resep kategori "Sarapan"
+            val intent = Intent(this, KatSarapanActivity::class.java)
+            startActivity(intent)
         }
 
         buttonKue.setOnClickListener {
             Toast.makeText(this, "Menampilkan Resep Kue", Toast.LENGTH_SHORT).show()
             // Tambahkan logika yang sesuai untuk menampilkan resep kategori "Kue"
+            val intent = Intent(this, KatKueActivity::class.java)
+            startActivity(intent)
         }
 
         buttonPudding.setOnClickListener {
             Toast.makeText(this, "Menampilkan Resep Pudding", Toast.LENGTH_SHORT).show()
             // Tambahkan logika yang sesuai untuk menampilkan resep kategori "Pudding"
+            val intent = Intent(this, KatPuddingActivity::class.java)
+            startActivity(intent)
         }
 
         buttonDiet.setOnClickListener {
             Toast.makeText(this, "Menampilkan Resep Menu Diet", Toast.LENGTH_SHORT).show()
             // Tambahkan logika yang sesuai untuk menampilkan resep kategori "Menu Diet"
+            val intent = Intent(this, KatMenuDietActivity::class.java)
+            startActivity(intent)
         }
+
+
     }
 }
