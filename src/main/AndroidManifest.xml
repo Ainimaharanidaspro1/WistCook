@@ -29,7 +29,12 @@
         <activity android:name=".AkunActivity" />
         <activity android:name=".FavoritActivity" />
         <activity android:name=".PostingActivity" />
-
+        <activity android:name=".KatSemuaActivity" />
+        <activity android:name=".KatNusantaraActivity" />
+        <activity android:name=".KatSarapanActivity" />
+        <activity android:name=".KatKueActivity" />
+        <activity android:name=".KatPuddingActivity" />
+        <activity android:name=".KatMenuDietActivity" />
 
 
         <meta-data
