@@ -1,4 +1,4 @@
-package com.example.pengaturanakun
+package.com.example.resepfavorit
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
