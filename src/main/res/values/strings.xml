@@ -7,4 +7,19 @@
     <string name="button_pudding">Pudding</string>
     <string name="button_menu_diet">Kue Basah</string>
 
+    <array name="data_photo">
+        <item>@drawable/rendang</item>
+        <item>@drawable/nasi_uduk</item>
+        <item>@drawable/seblak</item>
+        <item>@drawable/nasi_kuning</item>
+    </array>
+
+    <style name="CircularShape">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item> 
+    </style>
+
+    <string name="lihat_resep">Lihat Resep</string>
+    <string name="desc_button_action">Deskripsi aksi tombol</string>
+
 </resources>
