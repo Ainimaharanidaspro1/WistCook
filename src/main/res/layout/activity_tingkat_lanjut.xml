@@ -1,0 +1,61 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E6E1EA">
+
+    <!-- Back arrow button -->
+    <ImageView
+        android:id="@+id/backArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="Back Arrow"
+        android:src="@drawable/ic_back_arrow"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Title TextView -->
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Tentang aplikasi"
+        android:textColor="#3E2D4F"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/backArrow"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Main Button -->
+    <Button
+        android:id="@+id/appNameButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#8C4B94"
+        android:text="WistCook"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titleText" />
+
+    <!-- Description TextView -->
+    <TextView
+        android:id="@+id/descriptionText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@drawable/rounded_background"
+        android:padding="16dp"
+        android:text="WistCook adalah aplikasi resep makanan yang dirancang untuk membantu pengguna menemukan, menyimpan, dan berbagai berbagai resep masakan dengan mudah. Dengan antarmuka yang intuitif dan ramah pengguna, WistCook memungkinkan pengguna untuk menjelajahi beberapa resep dari berbagai kategori, mulai dari masakan tradisional hingga hidangan modern.\n\nTujuan utama WistCook adalah memberikan inspirasi kuliner dan memudahkan pengguna dalam memasak di rumah. Aplikasi ini bertujuan untuk meningkatkan pengalaman memasak dan membantu pengguna mengembangkan keterampilan kuliner mereka.\n\nWistCook menawarkan berbagai fitur, termasuk pencarian resep berdasarkan bahan dan waktu memasak. Pengguna juga dapat menyimpan resep favorit. Dengan WistCook, memasak menjadi lebih menyenangkan dan kreatif!"
+        android:textColor="#3E2D4F"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/appNameButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
