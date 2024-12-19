@@ -1,7 +1,7 @@
-package com.example.notifikasi
+package com.example.wistcookapp
 
 data class Notification(
-    val title: String,
-    val message: String,
-    val timestamp: String
+    val title: String = "",
+    val message: String = "",
+    val timestamp: Long = 0L
 )
