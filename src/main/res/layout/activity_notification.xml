@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#998DA6"> <!-- Background kontainer utama -->
+
+    <!-- Tombol Back -->
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_back"
+        android:contentDescription="Back"
+        android:background="?android:attr/selectableItemBackground" />
+
+    <!-- Judul Halaman "Notifikasi" -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Notifikasi"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#000000" />
+
+    <!-- RecyclerView untuk Daftar Notifikasi -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewNotifications"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tvTitle"
+        android:layout_marginTop="16dp"
+        android:padding="4dp"
+        android:scrollbars="vertical"
+        android:background="#998DA6" />
+
+</RelativeLayout>
