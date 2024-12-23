@@ -7,6 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".CariActivity">
 
+    <!-- Search Bar Section -->
     <androidx.cardview.widget.CardView
         android:id="@+id/searchCard"
         android:layout_width="0dp"
@@ -56,6 +57,11 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 
+    <!-- Horizontal Scroll View Section for Keyword History -->
+
+    <!-- RecyclerView for Categories -->
+
+    <!-- RecyclerView for Recipes -->
 
     <TextView
         android:id="@+id/RiwayatPencarian"
@@ -116,7 +122,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textKategoriResep"
-        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" /> <!-- Use LinearLayoutManager for single row -->
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerViewResep"
