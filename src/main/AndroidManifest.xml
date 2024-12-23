@@ -2,44 +2,104 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="WistCook1"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Pemob2"
+        android:theme="@style/Theme.WistCookApp"
         tools:targetApi="31">
-        <activity
-            android:name=".MainActivity"
-            android:exported="true">
+
+        <activity android:name=".LauncherActivity" android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
-        <activity android:name=".LoginActivity" />
-        <activity android:name=".RegisterActivity" />
-        <activity android:name=".ForgotPasswordActivity" />
-        <activity android:name=".BerandaActivity" />
-        <activity android:name=".CariActivity" />
-        <activity android:name=".AkunActivity" />
-        <activity android:name=".FavoritActivity" />
-        <activity android:name=".PostingActivity" />
-        <activity android:name=".KatSemuaActivity" />
-        <activity android:name=".KatNusantaraActivity" />
-        <activity android:name=".KatSarapanActivity" />
-        <activity android:name=".KatKueActivity" />
-        <activity android:name=".KatPuddingActivity" />
-        <activity android:name=".KatMenuDietActivity" />
+        <!-- Aktivitas lainnya -->
+        <activity android:name=".MainActivity" android:exported="false" />
+        <activity android:name=".Main2Activity" android:exported="false" />
+
+
+        <!-- Activity for email verification -->
+        <activity android:name=".ResetPasswordActivity"
+            android:exported="true"> <!-- Allow other apps to open this activity -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="https"
+                    android:host="wistcook-a72ae.firebaseapp.com"
+                    android:pathPrefix="/__/auth/action" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".LoginActivity"
+            android:exported="false" /> <!-- LoginActivity is not intended for external use -->
+        <activity android:name=".RegisterActivity"
+            android:exported="false" />
+        <activity android:name=".ForgotPasswordActivity"
+            android:exported="false" />
+        <activity android:name=".BerandaActivity"
+            android:exported="false" />
+        <activity android:name=".DetailResepActivity"
+            android:exported="false" />
+        <activity android:name=".CariActivity"
+            android:exported="false" />
+        <activity android:name=".AkunActivity"
+            android:exported="false" />
+        <activity android:name=".FavoritActivity"
+            android:exported="false" />
+        <activity android:name=".PostingActivity"
+            android:exported="false" />
+        <activity android:name=".KatNusantaraActivity"
+            android:exported="false" />
+        <activity android:name=".EditAkunActivity"
+            android:exported="false" />
+        <activity android:name=".EditProfilActivity"
+            android:exported="false" />
+        <activity android:name=".FeedbackActivity"
+            android:exported="false" />
+        <activity android:name=".FaqsActivity"
+            android:exported="false" />
+        <activity android:name=".TentangAplikasiActivity"
+            android:exported="false" />
+        <activity android:name=".KatSarapanActivity"
+            android:exported="false" />
+        <activity android:name=".KatKueActivity"
+            android:exported="false" />
+        <activity android:name=".KatPuddingActivity"
+            android:exported="false" />
+        <activity android:name=".KatMenuDietActivity"
+            android:exported="false" />
+        <activity android:name=".DetailSpesialActivity"
+            android:exported="false" />
+        <activity android:name=".ResepmuActivity"
+            android:exported="false" />
+        <activity android:name=".NotificationActivity"
+            android:exported="false" />
 
 
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
+
+        <meta-data
+            android:name="firebase_database_url"
+            android:value="https://wistcook-b7705-default-rtdb.asia-southeast1.firebasedatabase.app/" />
 
     </application>
 
