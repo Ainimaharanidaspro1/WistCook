@@ -1,3 +1,112 @@
 <resources>
-    <string name="app_name">PostingResep</string>
+    <string name="app_name">WistCookApp</string>
+    <string name="button_semua">Semua</string>
+    <string name="button_nusantara">Nusantara</string>
+    <string name="button_sarapan">Sarapan</string>
+    <string name="button_kue">Kue</string>
+    <string name="button_pudding">Pudding</string>
+    <string name="button_menu_diet">Kue Basah</string>
+    <string-array name="kategori_menu">
+        <item>Nusantara</item>
+        <item>Sarapan</item>
+        <item>Kue</item>
+        <item>Puding</item>
+        <item>Makanan diet</item>
+    </string-array>
+    <string name="back_button">Back</string>
+    <style name="CircularShape">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="CircularImage">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item> <!-- 50% untuk membuat gambar lingkaran -->
+    </style>
+
+    <string name="favorite_icon">Favorite</string>
+
+    <string name="resep_not_found">Resep tidak tersedia</string>
+
+
+    <string name="lihat_resep">Lihat Resep</string>
+    <string name="desc_button_action">Deskripsi aksi tombol</string>
+
+    <string name="search_hint">Search your favorite food</string>
+    <string name="search_icon_desc">Search icon</string>
+    <string name="search_history_title">Search History</string>
+    <string name="seblak">Seblak</string>
+    <string name="pudding">Pudding</string>
+    <string name="cookies">Cookies</string>
+    <string name="explore_title">Explore Recipes</string>
+    <string name="recipe_card_desc">Recipe card grid</string>
+    <string name="category_image">Kategori Gambar</string>
+    <string name="recipe_image_desc">Gambar resep masakan</string>
+
+    <string-array name="food_name">
+            <item>Nasi Goreng</item>
+            <item>Rendang</item>
+            <item>Sate Ayam</item>
+            <item>Gado-Gado</item>
+            <item>Soto Ayam</item>
+            <item>Bakso</item>
+            <item>Pempek</item>
+            <item>Rawon</item>
+            <item>Bubur Ayam</item>
+            <item>Klepon</item>
+        </string-array>
+
+        <string-array name="food_description">
+            <item>Nasi goreng adalah hidangan khas Indonesia berupa nasi yang digoreng dengan bumbu dan tambahan seperti telur, ayam, atau udang.</item>
+            <item>Rendang adalah masakan daging bercita rasa kaya rempah, dimasak dalam santan hingga kering, berasal dari Sumatera Barat.</item>
+            <item>Sate ayam adalah daging ayam yang ditusuk, dipanggang, dan disajikan dengan bumbu kacang khas.</item>
+            <item>Gado-gado adalah salad tradisional Indonesia yang disajikan dengan saus kacang dan bahan seperti sayuran rebus, tahu, dan tempe.</item>
+            <item>Soto ayam adalah sup khas Indonesia dengan kaldu kuning, ayam suwir, bihun, dan pelengkap seperti telur rebus.</item>
+            <item>Bakso adalah bola daging kenyal yang disajikan dengan kuah kaldu, mi, dan pelengkap seperti tahu goreng atau pangsit.</item>
+            <item>Pempek adalah makanan khas Palembang berbahan dasar ikan dan tepung, disajikan dengan kuah cuka yang asam dan pedas.</item>
+            <item>Rawon adalah sup daging khas Jawa Timur dengan kuah hitam pekat yang berasal dari kluwek.</item>
+            <item>Bubur ayam adalah bubur nasi yang disajikan dengan suwiran ayam, kacang, kerupuk, dan saus kecap.</item>
+            <item>Klepon adalah kue tradisional berbentuk bola kecil berisi gula merah, dilapisi kelapa parut.</item>
+        </string-array>
+
+        <integer-array name="food_image">
+            <item>@drawable/nasi_goreng</item>
+            <item>@drawable/rendang</item>
+            <item>@drawable/sate_ayam</item>
+            <item>@drawable/gado_gado</item>
+            <item>@drawable/soto_ayam</item>
+            <item>@drawable/bakso</item>
+            <item>@drawable/pempek</item>
+            <item>@drawable/rawon</item>
+            <item>@drawable/bubur_ayam</item>
+            <item>@drawable/klepon</item>
+        </integer-array>
+
+    <!-- Food Ingredients -->
+    <string-array name="food_ingredients">
+        <item>Bahan-bahan:\n- 2 piring nasi putih\n- 2 siung bawang putih, cincang halus\n- 1 butir telur, kocok lepas\n- 2 sdm kecap manis\n- 1 sdm saus tiram\n- 1/2 sdt garam\n- 1/4 sdt merica\n- 2 sdm minyak goreng\n- Pelengkap: acar, kerupuk</item>
+        <item>Bahan-bahan:\n- 500 gram daging sapi, potong sesuai selera\n- 500 ml santan kental\n- 2 lembar daun jeruk\n- 2 batang serai, memarkan\n- 1 lembar daun kunyit\n- 5 siung bawang merah\n- 3 siung bawang putih\n- 3 buah cabai merah besar\n- 1 ruas kunyit\n- 1 ruas jahe\n- 1 sdt ketumbar\n- Garam secukupnya</item>
+        <item>Bahan-bahan:\n- 500 gram daging ayam, potong dadu\n- 2 sdm kecap manis\n- 1 sdm minyak goreng\n- 1 sdt garam\n- 1 sdt merica\n- 10 tusuk sate\n- 100 gram kacang tanah, goreng\n- 1 siung bawang putih\n- 1 sdt kecap manis\n- 1 sdm air matang\n- 1/2 sdt gula merah</item>
+        <item>Bahan-bahan:\n- 200 gram sayuran rebus (kentang, kacang panjang, taoge)\n- 2 lembar daun selada\n- 2 buah tahu goreng\n- 2 buah tempe goreng\n- 2 butir telur rebus\n- 100 gram krupuk\n- 100 gram kacang tanah, goreng\n- 1 siung bawang putih\n- 2 buah cabai merah\n- 1 sdt gula merah\n- 1 sdm kecap manis\n- 1 sdt air asam jawa\n- 100 ml air matang</item>
+        <item>Bahan-bahan:\n- 500 gram ayam, potong-potong\n- 1 batang serai, memarkan\n- 2 lembar daun jeruk\n- 1 liter air kaldu\n- 100 gram bihun, rebus\n- 2 butir telur rebus\n- 1 sdt garam\n- 1/2 sdt merica\n- 5 siung bawang merah\n- 3 siung bawang putih\n- 2 ruas jahe\n- 1 ruas kunyit</item>
+        <item>Bahan-bahan:\n- 500 gram daging sapi giling\n- 100 gram tepung sagu\n- 2 siung bawang putih, haluskan\n- 1 butir telur\n- 1 sdt garam\n- 1/2 sdt merica\n- 1 liter kaldu sapi\n- 2 sdm bawang goreng</item>
+        <item>Bahan-bahan:\n- 500 gram ikan tenggiri, giling\n- 100 gram tepung sagu\n- 2 siung bawang putih, haluskan\n- 1 sdt garam\n- 1/2 sdt merica\n- 200 ml air\n- Cuka pempek\n- 100 gram gula merah</item>
+        <item>Bahan-bahan:\n- 500 gram daging sapi, potong-potong\n- 100 gram kluwek\n- 1 batang serai, memarkan\n- 3 lembar daun jeruk\n- 1 liter air kaldu\n- 1 sdt garam\n- 1/2 sdt merica\n- 5 siung bawang merah\n- 3 siung bawang putih\n- 2 buah cabai merah</item>
+        <item>Bahan-bahan:\n- 200 gram beras, cuci bersih\n- 500 ml kaldu ayam\n- 100 gram ayam, suwir\n- 2 batang daun bawang, iris\n- 2 butir telur rebus\n- 1 sdt kecap manis\n- 1 sdt garam\n- 1/2 sdt merica</item>
+        <item>Bahan-bahan:\n- 200 gram ketan hitam\n- 100 gram kelapa parut kasar\n- 100 gram gula merah serut\n- Air daun pandan</item>
+    </string-array>
+
+    <!-- Food Steps -->
+    <string-array name="food_steps">
+        <item>Langkah-langkah Memasak:\n1. Panaskan minyak goreng di wajan.\n2. Tumis bawang putih hingga harum.\n3. Masukkan telur, orak-arik hingga matang.\n4. Tambahkan nasi putih, aduk hingga tercampur rata.\n5. Tambahkan kecap manis, saus tiram, garam, dan merica.\n6. Aduk hingga semua bahan merata dan nasi berwarna kecokelatan.\n7. Angkat dan sajikan dengan pelengkap seperti acar dan kerupuk.</item>
+        <item>Langkah-langkah Memasak:\n1. Panaskan sedikit minyak, tumis bumbu halus hingga harum.\n2. Tambahkan daun jeruk, serai, dan daun kunyit, tumis sebentar.\n3. Masukkan daging sapi, aduk hingga berubah warna.\n4. Tuangkan santan, masak dengan api kecil sambil diaduk perlahan.\n5. Masak hingga santan mengental dan daging empuk.\n6. Angkat dan sajikan dengan nasi hangat.</item>
+        <item>Langkah-langkah Memasak:\n1. Campurkan ayam dengan kecap manis, minyak goreng, garam, dan merica. Diamkan selama 30 menit.\n2. Tusukkan ayam ke tusuk sate.\n3. Panggang sate di atas bara api atau grill hingga matang.\n4. Untuk bumbu kacang: haluskan kacang tanah goreng, bawang putih, kecap manis, air, dan gula merah.\n5. Sajikan sate ayam dengan bumbu kacang.</item>
+        <item>Langkah-langkah Memasak:\n1. Susun sayuran, tahu, tempe, dan telur di atas piring saji.\n2. Untuk bumbu kacang: haluskan kacang tanah, bawang putih, cabai merah, gula merah, kecap manis, air asam jawa, dan air matang.\n3. Siramkan bumbu kacang di atas sayuran dan tambahkan krupuk.</item>
+        <item>Langkah-langkah Memasak:\n1. Rebus ayam bersama serai, daun jeruk, dan air kaldu hingga ayam empuk.\n2. Angkat ayam, suwir daging ayamnya, dan saring kaldu.\n3. Tumis bumbu halus hingga harum, lalu masukkan ke dalam kaldu.\n4. Masukkan ayam suwir, bihun, telur rebus, garam, dan merica. Masak hingga mendidih.\n5. Sajikan dengan sambal dan perasan jeruk nipis.</item>
+        <item>Langkah-langkah Memasak:\n1. Campurkan daging sapi giling, tepung sagu, bawang putih, telur, garam, dan merica. Aduk rata.\n2. Bentuk adonan menjadi bola-bola bakso.\n3. Rebus bola bakso dalam kaldu sapi hingga mengapung.\n4. Sajikan bakso dengan kuah kaldu dan taburan bawang goreng.</item>
+        <item>Langkah-langkah Memasak:\n1. Campurkan ikan giling, tepung sagu, bawang putih, garam, merica, dan air. Aduk rata.\n2. Bentuk adonan menjadi pempek dan rebus hingga mengapung.\n3. Untuk kuah cuka, masak cuka dengan gula merah hingga mendidih.\n4. Sajikan pempek dengan kuah cuka.</item>
+        <item>Langkah-langkah Memasak:\n1. Rebus daging sapi dengan kluwek, serai, daun jeruk, dan kaldu hingga daging empuk.\n2. Tumis bumbu halus hingga harum, lalu masukkan ke dalam kaldu.\n3. Masak hingga kuah mengental dan bumbu meresap.\n4. Sajikan dengan nasi dan sambal.</item>
+        <item>Langkah-langkah Memasak:\n1. Rebus beras dengan kaldu ayam hingga menjadi bubur.\n2. Tambahkan ayam suwir, daun bawang, telur rebus, kecap manis, garam, dan merica.\n3. Sajikan dengan kerupuk dan sambal.</item>
+        <item>Langkah-langkah Memasak:\n1. Kukus ketan hitam hingga matang.\n2. Ambil segenggam ketan, beri gula merah serut di dalamnya, bulatkan.\n3. Rebus klepon dalam air mendidih hingga klepon mengapung.\n4. Gulingkan klepon dalam kelapa parut, sajikan.</item>
+    </string-array>
 </resources>
