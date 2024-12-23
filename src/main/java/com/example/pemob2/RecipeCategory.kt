@@ -1,4 +1,4 @@
-package com.example.halaman_research.model
+package com.example.wistcookapp
 
 // Data class untuk kategori resep
 data class RecipeCategory(
