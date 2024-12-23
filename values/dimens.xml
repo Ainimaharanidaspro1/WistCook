@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="toolbar_height">56dp</dimen>
+    <dimen name="profile_image_size">80dp</dimen>
+    <dimen name="cardview_margin">16dp</dimen>
+    <dimen name="text_size">16sp</dimen>
+    <dimen name="padding_large">16dp</dimen>
+    <dimen name="padding_small">8dp</dimen>
+    <dimen name="image_width">300dp</dimen> <!-- Dimensi dinamis untuk ImageView -->
+    <dimen name="image_height">130dp</dimen> <!-- Dimensi dinamis untuk ImageView -->
+    <dimen name="image_posting_width">94dp</dimen>
+    <dimen name="image_posting_height">90dp</dimen>
+    <dimen name="min_column_width">300dp</dimen>
+    <dimen name="image_icon_width">25dp</dimen>
+    <dimen name="image_icon_height">24dp</dimen>
+
+    <dimen name="image_margin_bottom">20dp</dimen>
+
+    <dimen name="imageView14_width">440dp</dimen>
+    <dimen name="imageView14_height">159dp</dimen>
+    <dimen name="imageView14_marginTop">640dp</dimen>
+</resources>
