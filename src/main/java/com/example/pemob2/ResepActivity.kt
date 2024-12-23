@@ -1,4 +1,4 @@
-package com.example.pemob2
+package com.example.wistcookapp
 
 import android.os.Bundle
 import android.widget.ImageView
@@ -13,19 +13,13 @@ class ResepActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_beranda) // Ganti dengan layout file Anda
 
-        val imageViewHeart: ImageView = findViewById(R.id.imageViewHeart)
-        val imageViewStar: ImageView = findViewById(R.id.imageViewStar)
+        val imageViewHeart: ImageView = findViewById(R.id.imageFavorit)
+
 
         imageViewHeart.setOnClickListener {
             // Toggle favorit
             isFavorite = !isFavorite
             imageViewHeart.isSelected = isFavorite
-        }
-
-        imageViewStar.setOnClickListener {
-            // Toggle rating
-            isRated = !isRated
-            imageViewStar.isSelected = isRated
         }
     }
 }
