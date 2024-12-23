@@ -1,4 +1,4 @@
-package com.example.pengaturanakun
+package com.example.wistcookapp
 
 import android.os.Bundle
 import android.view.View
