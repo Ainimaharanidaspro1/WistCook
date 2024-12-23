@@ -9,10 +9,10 @@
     app:cardElevation="4dp">
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="111dp"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
         android:gravity="center"
+        android:orientation="vertical"
         android:padding="16dp">
 
         <!-- Gambar Kategori -->
@@ -20,8 +20,8 @@
             android:id="@+id/categoryImage"
             android:layout_width="64dp"
             android:layout_height="64dp"
-            android:contentDescription="@string/category_image"
-            android:layout_gravity="center" />
+            android:layout_gravity="center"
+            android:contentDescription="@string/category_image" />
 
         <!-- Nama Kategori -->
         <TextView
@@ -29,9 +29,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
+            android:fontFamily="@font/poppins_semibold"
             android:gravity="center"
-            android:textSize="14sp"
+            android:text="Kategori"
             android:textColor="@android:color/black"
-            android:text="Kategori" />
+            android:textSize="14sp" />
     </LinearLayout>
 </androidx.cardview.widget.CardView>
