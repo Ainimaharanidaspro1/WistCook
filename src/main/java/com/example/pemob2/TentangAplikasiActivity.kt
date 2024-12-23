@@ -1,4 +1,4 @@
-package com.example.pengaturanakun
+package com.example.wistcookapp
 
 import android.content.Intent
 import android.os.Bundle
@@ -11,17 +11,13 @@ class TentangAplikasiActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_tentang_aplikasi)
 
-        // "Tingkat Lanjut" button click listener
-        val tingkatLanjutButton = findViewById<Button>(R.id.btn_tingkat_lanjut)
-        tingkatLanjutButton.setOnClickListener {
-            val intent = Intent(this, TingkatLanjutActivity::class.java)
-            startActivity(intent)
+        // Ambil referensi dari ImageView
+        val backArrow: ImageView = findViewById(R.id.backArrow)
+
+        // Tambahkan onClickListener
+        backArrow.setOnClickListener {
+            onBackPressed() // Kembali ke halaman sebelumnya
         }
 
-        // Back button click listener
-        val backButton = findViewById<ImageView>(R.id.back_button)
-        backButton.setOnClickListener {
-            finish() // Returns to the previous activity (AccountActivity)
-        }
     }
 }
