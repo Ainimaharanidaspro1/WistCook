@@ -1,4 +1,4 @@
-package com.example.halaman_research.adapter
+package com.example.wistcookapp
 
 import android.view.LayoutInflater
 import android.view.View
@@ -6,8 +6,8 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.example.halaman_research.R
-import com.example.halaman_research.model.RecipeCategory
+import com.example.wistcookapp.R
+import com.example.wistcookapp.RecipeCategory
 
 class RecipeCategoryAdapter(
     private val categories: List<RecipeCategory>,
