@@ -1,95 +1,61 @@
-package com.example.halaman_tutorial
+package com.example.wistcookapp
 
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
-import android.widget.ImageView
-import android.widget.RatingBar
-import android.widget.Toast
-import androidx.appcompat.app.AlertDialog
+import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.content.ContextCompat
+import androidx.core.view.ViewCompat
+import androidx.core.view.WindowInsetsCompat
+import com.google.firebase.auth.FirebaseAuth
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var ratingBar: RatingBar
-    private var isFavorite: Boolean = false // Status favorit untuk toggle ikon
+    private lateinit var auth: FirebaseAuth
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // Inisialisasi View
-        ratingBar = findViewById(R.id.ratingBar)
-        val buttonStartCooking: Button = findViewById(R.id.buttonStartCooking)
-        val iconDelete: ImageView = findViewById(R.id.iconDelete)
-        val iconFavorite: ImageView = findViewById(R.id.iconFavorite)
-        val iconShare: ImageView = findViewById(R.id.iconShare)
+        // Menginisialisasi FirebaseAuth
+        auth = FirebaseAuth.getInstance()
 
-        // Navigasi ke halaman TutorialActivity
-        buttonStartCooking.setOnClickListener {
-            val intent = Intent(this, TutorialActivity::class.java)
+        // Cek status login pengguna
+        if (auth.currentUser != null) {
+            // Pengguna sudah login, langsung pindah ke BerandaActivity
+            val intent = Intent(this, Main2Activity::class.java)
+            startActivity(intent)
+            finish() // Menutup MainActivity agar tidak bisa kembali ke halaman login
+        } else {
+            // Pengguna belum login, tampilkan halaman login atau register
+            setupButtons()
+        }
+
+        // Mengatur window insets untuk layout
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
+            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
+            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
+            insets
+        }
+    }
+
+    private fun setupButtons() {
+        // Temukan tombol masuk dan daftar
+        val masukButton = findViewById<Button>(R.id.masuk_button)
+        val registerButton = findViewById<Button>(R.id.register_button)
+
+        // Set onClickListener untuk tombol Masuk
+        masukButton.setOnClickListener {
+            // Navigasi ke LoginActivity
+            val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
         }
 
-        // Konfirmasi penghapusan resep
-        iconDelete.setOnClickListener {
-            showDeleteConfirmationDialog()
+        // Set onClickListener untuk tombol Daftar
+        registerButton.setOnClickListener {
+            // Navigasi ke RegisterActivity
+            val intent = Intent(this, RegisterActivity::class.java)
+            startActivity(intent)
         }
-
-        // Toggle favorit
-        iconFavorite.setOnClickListener {
-            toggleFavorite(iconFavorite)
-        }
-
-        // Bagikan resep
-        iconShare.setOnClickListener {
-            shareRecipe()
-        }
-
-        // Update rating dengan listener
-        ratingBar.setOnRatingBarChangeListener { _, rating, _ ->
-            Toast.makeText(this, "Rating diberikan: $rating", Toast.LENGTH_SHORT).show()
-        }
-    }
-
-    // Fungsi untuk toggle favorit
-    private fun toggleFavorite(iconFavorite: ImageView) {
-        isFavorite = !isFavorite
-        val color = if (isFavorite) {
-            ContextCompat.getColor(this, R.color.red) // Warna untuk status favorit
-        } else {
-            ContextCompat.getColor(this, R.color.gray) // Warna untuk status non-favorit
-        }
-        iconFavorite.setColorFilter(color) // Mengubah warna ikon
-
-        val message = if (isFavorite) {
-            "Resep ditambahkan ke favorit"
-        } else {
-            "Resep dihapus dari favorit"
-        }
-        Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
-    }
-
-    // Fungsi untuk membagikan resep
-    private fun shareRecipe() {
-        val shareIntent = Intent(Intent.ACTION_SEND).apply {
-            type = "text/plain"
-            putExtra(Intent.EXTRA_TEXT, "Coba resep Seblak di aplikasi ini!")
-        }
-        startActivity(Intent.createChooser(shareIntent, "Bagikan ke"))
-    }
-
-    // Dialog konfirmasi hapus
-    private fun showDeleteConfirmationDialog() {
-        AlertDialog.Builder(this)
-            .setTitle("Hapus Resep")
-            .setMessage("Apakah Anda yakin ingin menghapus resep ini?")
-            .setPositiveButton("Ya") { _, _ ->
-                Toast.makeText(this, "Resep dihapus", Toast.LENGTH_SHORT).show()
-                // Tambahkan logika penghapusan data jika diperlukan
-            }
-            .setNegativeButton("Tidak", null)
-            .show()
     }
 }
